@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - sc_applepay (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - sc_applepay (from `.symlinks/plugins/sc_applepay/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  sc_applepay:
+    :path: ".symlinks/plugins/sc_applepay/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  integration_test: 13825b8a9334a850581300559b8839134b124670
+  sc_applepay: 2ba823458c38c3f89b755c28c9d4e4b11c76f40b
+
+PODFILE CHECKSUM: de2e81b2f583464b7bfd99d69a32baaf960a4deb
+
+COCOAPODS: 1.15.2
