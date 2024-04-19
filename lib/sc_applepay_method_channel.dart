@@ -7,7 +7,7 @@ import 'sc_applepay_platform_interface.dart';
 class MethodChannelScApplepay extends ScApplepayPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('sc_applepay');
+  final MethodChannel methodChannel = const MethodChannel('sc_applepay');
 
   @override
   Future<String?> getPlatformVersion() async {
@@ -16,8 +16,18 @@ class MethodChannelScApplepay extends ScApplepayPlatform {
   }
 
   @override
-  Future<String?> canMakePayments() async {
-    final result = await methodChannel.invokeMethod<String>('canMakePayments');
+  Future<bool?> isWalletHasCards() async {
+    final result = await methodChannel.invokeMethod<bool>('isWalletHasCards');
     return result;
+  }
+
+  @override
+  void setupNewCard() {
+    methodChannel.invokeMethod<void>('setupNewCard');
+  }
+
+  @override
+  void startPayment(String paymentData){
+    methodChannel.invokeMethod<void>('startPayment', paymentData);
   }
 }

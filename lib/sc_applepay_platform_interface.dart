@@ -27,7 +27,15 @@ abstract class ScApplepayPlatform extends PlatformInterface {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
-  Future<String?> canMakePayments() async {
-    throw UnimplementedError('canMakePayments() has not been implemented.');
+  Future<bool?> isWalletHasCards() async {
+    throw UnimplementedError('walletHasCards() has not been implemented.');
+  }
+
+  void setupNewCard() {
+    throw UnimplementedError('setupNewCard() has not been implemented.');
+  }
+
+  void startPayment(String paymentData){
+    throw UnimplementedError('startPayment() has not been implemented.');
   }
 }
