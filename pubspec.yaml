@@ -1,7 +1,7 @@
 name: sc_applepay
 description: "SkipCash ApplePay Flutter Plugin"
 version: 0.0.1
-homepage:
+homepage: https://skipcash.app/
 
 environment:
   sdk: '>=3.3.2 <4.0.0'

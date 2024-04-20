@@ -37,7 +37,7 @@ class ScApplepay {
         try {
           Map<String, dynamic>? jsonMap = call.arguments.cast<String, dynamic>();
           if (jsonMap != null) {
-            responseStreamController.add(jsonMap ?? {});
+            responseStreamController.add(jsonMap);
           } else {
             debugPrint("Error: Unable to cast arguments to Map<String, dynamic>");
           }
