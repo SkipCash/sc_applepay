@@ -1,13 +1,6 @@
 # sc_applepay
 
-SkipCash ApplePay Flutter Plugin
-
-## Getting Started
-
-# sc_applepay Plugin Example App
-
-This is an example app demonstrating the usage of the `sc_applepay` Flutter plugin. 
-The plugin facilitates Apple Pay integration within your Flutter app.
+SkipCash ApplePay Flutter Plugin; The plugin facilitates SkipCash Apple Pay integration within your Flutter app.
 
 ## Getting Started
 
