@@ -179,35 +179,6 @@ public class ScApplepayPlugin: NSObject, FlutterPlugin, ApplePayReponseDelegate 
             }
         })
     }
-
-    
-
-    func showAlert(with title: String, message: String) {
-        guard let windowScene = UIApplication.shared.connectedScenes
-                .compactMap({ $0 as? UIWindowScene })
-                .first(where: { $0.activationState == .foregroundActive }),
-              let window = windowScene.windows.first(where: { $0.isKeyWindow }) else {
-            return
-        }
-
-        var viewController = window.rootViewController
-        while let presentedViewController = viewController?.presentedViewController {
-            presentedViewController.modalPresentationStyle = .overCurrentContext
-            viewController = presentedViewController
-        }
-
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            viewController?.dismiss(animated: true, completion: nil)
-        }
-        alertController.addAction(okAction)
-        
-        alertController.modalPresentationStyle = .overCurrentContext
-        
-        viewController?.modalPresentationStyle = .overCurrentContext
-
-        viewController?.present(alertController, animated: true, completion: nil)
-    }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
@@ -249,17 +220,6 @@ public class ScApplepayPlugin: NSObject, FlutterPlugin, ApplePayReponseDelegate 
                 } else {
                     print("Error: call.arguments is not of type String")
                 }
-        
-        case "showAlert":
-           if let data = call.arguments as? [String: String] {
-               if let title = data["title"], let message = data["message"] {
-                   self.showAlert(with: title, message: message)
-               } else {
-                   result(FlutterError(code: "INVALID_ARGUMENT", message: "Title or message is missing", details: nil))
-               }
-           } else {
-               result(FlutterError(code: "INVALID_ARGUMENT", message: "showAlert Data argument is invalid", details: nil))
-           }
 
         default:
           result(FlutterMethodNotImplemented)
@@ -275,9 +235,6 @@ extension ScApplepayPlugin: PKPaymentAuthorizationControllerDelegate {
         let status = PKPaymentAuthorizationStatus.success
 
         var sign = ""
-
-        print("paymentData")
-        print(payment.token.paymentData)
         
         do {
             if let jsonResponse = try JSONSerialization.jsonObject(with: payment.token.paymentData, options: []) as? [String: Any] {
