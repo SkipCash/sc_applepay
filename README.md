@@ -39,7 +39,7 @@ void _setupApplePayResponseListener() {
     // Handle payment response here...
     // you can get the payment details using the payment id after successful payment request.
     // send a GET request to SkipCash server /api/v1/payments/${paymentResponse.paymentId} and include your merchant
-    // client id in the header request to get the payment details.
+    // client id in the authorization header request to get the payment details.
     // for more details please refer to https://dev.skipcash.app/doc/api-integration/ 
   });
 }
