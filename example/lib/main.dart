@@ -20,9 +20,13 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final _newPayment = ScApplepay(
-    merchantIdentifier: "merchant.com.skipcash.appay", //here you should pass your merchantIdentifier
-    createPaymentLinkEndPoint: "https://paymentsimulation-4f296ff7747c.herokuapp.com/api/createPaymentLink/"
+    merchantIdentifier: "", //here you should pass your merchantIdentifier
+    createPaymentLinkEndPoint: ""
   );
+
+  /* Authorizartion Header */
+  _newPayment.setAuthorizationHeader();
+  // set your endpoint authorizartion header, used to protect your endpoint from unauthorized access 
 
   StreamSubscription<dynamic>? _applePayResponseSubscription;
 

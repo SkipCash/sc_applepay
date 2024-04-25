@@ -34,6 +34,11 @@ final _newPayment = ScApplepay(
     */
 );
 
+_newPayment.setAuthorizationHeader(); /* 
+  set your endpoint authorizartion header, used to protect your endpoint from unauthorized access 
+
+*/
+
 StreamSubscription<dynamic>? _applePayResponseSubscription;
 
 void _setupApplePayResponseListener() {
