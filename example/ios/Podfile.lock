@@ -2,7 +2,7 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - sc_applepay (0.0.1):
+  - sc_applepay (0.0.6):
     - Flutter
 
 DEPENDENCIES:
@@ -21,8 +21,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 13825b8a9334a850581300559b8839134b124670
-  sc_applepay: 6ba755cc7ba98542e8059b39562ba031cf85ce79
+  sc_applepay: 74b800a7c2937d107d6a6763d0129587f66a0e31
 
-PODFILE CHECKSUM: de2e81b2f583464b7bfd99d69a32baaf960a4deb
+PODFILE CHECKSUM: 54e2551435c45ecee71f147870b98a81b7365932
 
 COCOAPODS: 1.15.2

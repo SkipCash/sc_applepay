@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SkipCashSDK-Swift.h</key>
 		<data>
-		TAPTBr1t5O8Bzya9D5pYzdxJCes=
+		taQcXGyKPALCxzYB5Ffbct0QbTA=
 		</data>
 		<key>Headers/SkipCashSDK.h</key>
 		<data>
@@ -14,47 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SQPdYogBK7CSf9VtJ2Hr/+uuwsc=
+		uHXDLe5S3NOsDspap5OssFLjYSo=
 		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
 		2qMB9PPmasHYXfV+HZoNNxH73l4=
 		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		UEoUhx1RtlrTGZFP9Oq3VNNNa5g=
+		yJpPfwhZNL6aBk7cOOIIsbr8/20=
 		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		zJUr/vSX+Z8zzeQxdT+AAf228w8=
+		x9dPgiG5lO5lbv151l8WeNyLV4M=
 		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		UEoUhx1RtlrTGZFP9Oq3VNNNa5g=
+		yJpPfwhZNL6aBk7cOOIIsbr8/20=
 		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		yTNg+9eJf4I4scIsmCP0uLJR8y0=
-		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		2qMB9PPmasHYXfV+HZoNNxH73l4=
-		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		C2Ty4I/Ti3jcJJIc3lVxKXVFDe4=
-		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		NBNVIyqA/JJkngh8D5MNXpSOtvw=
-		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		C2Ty4I/Ti3jcJJIc3lVxKXVFDe4=
-		</data>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		Q1ibXZhxsLqN18ipv6oZ8sx1nHQ=
+		rAZbhwWei44QRx1DC36DXXnhTb4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikO0MKMlQXvRHcOR6voVS32Hl10KHqAf4yXc4gHcPgw=
+			qtRrdZwcAeKOYm6JvygpuhRABR59k5y32oUh/9glk+Y=
 			</data>
 		</dict>
 		<key>Headers/SkipCashSDK.h</key>
@@ -93,74 +73,39 @@
 			d5CAQ1z/xCo4++rTysBjcxLcfa0HOjKHBAHSoDUTVFU=
 			</data>
 		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			9ppdIy1JlE7aA2n9JEQM09fWsOYoszfQnxVrdS3ecio=
 			</data>
 		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jW3jtV3vsczeIV5hy6XY2vJBG+vv1vmXvkWAdEbfRF8=
+			dzBsDnzI9qDV/by1kTohp79TprxYQOrmdWsdW69dHMs=
 			</data>
 		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ryEJvG+fZkORlKJj+b1iZVUAtRHLkZyQ/S17UxQjfQ=
+			cPflAS4wSIZblgjPbfSfBnjTed/J3jymH3NoRpyQqF8=
 			</data>
 		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jW3jtV3vsczeIV5hy6XY2vJBG+vv1vmXvkWAdEbfRF8=
+			dzBsDnzI9qDV/by1kTohp79TprxYQOrmdWsdW69dHMs=
 			</data>
 		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/SkipCashSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pgslrbp8mbfnKWr4vWX58cqsqqxLptF20dw6sY+TGIo=
-			</data>
-		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9ppdIy1JlE7aA2n9JEQM09fWsOYoszfQnxVrdS3ecio=
-			</data>
-		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JcbxJjeu90s+OzFsb2ZvUAT85akWQYT0iJNlFJcOdTg=
-			</data>
-		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iVHhcxMszfI1J8E51msrQDjTSL1+D374njkmXa0LYMM=
-			</data>
-		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JcbxJjeu90s+OzFsb2ZvUAT85akWQYT0iJNlFJcOdTg=
-			</data>
-		</dict>
-		<key>Modules/SkipCashSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2TleCwuYdYbRB6JUfi07o/jS+lqnzuEY6mUKOu03WKE=
+			K9acAPZVl39j2bVGUct1Y5WpPiBeTE7o22XL4nGKPcA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

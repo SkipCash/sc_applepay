@@ -19,13 +19,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+
   final _newPayment = ScApplepay(
-    merchantIdentifier: "", //here you should pass your merchantIdentifier
-    createPaymentLinkEndPoint: ""
+    merchantIdentifier: "merchant.com.skipcash.appay", //here you should pass your merchantIdentifier
+    createPaymentLinkEndPoint: "https://paymentsimulation-4f296ff7747c.herokuapp.com/api/createPaymentLink/"
   );
 
   /* Authorizartion Header */
-  _newPayment.setAuthorizationHeader();
+  // _newPayment.setAuthorizationHeader();
   // set your endpoint authorizartion header, used to protect your endpoint from unauthorized access 
 
   StreamSubscription<dynamic>? _applePayResponseSubscription;
@@ -147,6 +148,32 @@ class _MyAppState extends State<MyApp> {
                       String email = _emailController.text;
                       String amount = _amountController.text;
 
+                      if(firstName.length < 1 || lastName.length < 1 || phone.length < 1
+                        || email.length < 1 || amount.length < 1 || amount == "0.0"){
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Invalid Details'),
+                              content: Text(
+                                  "Please fill all of the fields, Also amount must be above 0.0, i.e 1.0  at least."
+                              ),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: const Text('OK'),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+
+                        return;
+                      }
+
+                      
                       _newPayment.setFirstName(firstName);
                       _newPayment.setLastName(lastName);
                       _newPayment.setEmail(email);
