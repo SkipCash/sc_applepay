@@ -13,3 +13,6 @@
 
 ## 0.0.5
 * Update to use authorization header
+
+## 0.0.6
+* Update SkipCashSDK
