@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'sc_applepay'
-  s.version          = '0.0.7'
+  s.version          = '0.0.8'
   s.summary          = 'SkipCash ApplePay Flutter Plugin'
   s.description      = <<-DESC
 SkipCash ApplePay Flutter Plugin
@@ -16,6 +16,7 @@ SkipCash ApplePay Flutter Plugin
   s.source_files = 'Classes/**/*'
   s.vendored_frameworks = 'Frameworks/SkipCashSDK.xcframework'
   s.dependency 'Flutter'
+  s.frameworks = 'SkipCashSDK'
   # s.platform = :ios, '17.0'
 
 

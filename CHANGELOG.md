@@ -19,3 +19,6 @@
 
 ## 0.0.7
 * Update SkipCashSDK
+
+## 0.0.8
+* Correct Linking Of SkipCashSDK
