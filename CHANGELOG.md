@@ -22,3 +22,6 @@
 
 ## 0.0.8
 * Correct Linking Of SkipCashSDK
+
+## 0.0.9
+* Correct Linking Of SkipCashSDK

@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'sc_applepay'
-  s.version          = '0.0.8'
+  s.version          = '0.0.9'
   s.summary          = 'SkipCash ApplePay Flutter Plugin'
   s.description      = <<-DESC
 SkipCash ApplePay Flutter Plugin

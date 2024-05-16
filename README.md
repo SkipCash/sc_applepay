@@ -8,7 +8,7 @@ SkipCash ApplePay Flutter Plugin; The plugin facilitates SkipCash Apple Pay inte
 
 ```yaml
 dependencies:
-  sc_applepay: ^0.0.7
+  sc_applepay: ^0.0.9
 ```
 
 ```dart
