@@ -27,6 +27,16 @@ class MethodChannelScApplepay extends ScApplepayPlatform {
   }
 
   @override
+  void loadSCPGW(String payURL, String nativeWebViewTitle, String returnURL){
+    methodChannel.invokeMethod<void>(
+        'loadSCPGW', {
+      "payURL": payURL,
+      "nativeWebViewTitle": nativeWebViewTitle,
+      "returnURL": returnURL
+    });
+  }
+
+  @override
   void startPayment(String paymentData){
     methodChannel.invokeMethod<void>('startPayment', paymentData);
   }

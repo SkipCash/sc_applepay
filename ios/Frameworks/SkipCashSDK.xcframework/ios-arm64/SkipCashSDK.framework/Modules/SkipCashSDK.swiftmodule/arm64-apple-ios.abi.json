@@ -29,428 +29,11 @@
         "moduleName": "SkipCashSDK"
       },
       {
-        "kind": "TypeDecl",
-        "name": "CustomerPaymentData",
-        "printedName": "CustomerPaymentData",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(phone:email:firstName:lastName:amount:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CustomerPaymentData",
-                "printedName": "SkipCashSDK.CustomerPaymentData",
-                "usr": "s:11SkipCashSDK19CustomerPaymentDataC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC5phone5email9firstName04lastJ06amountACSS_S4Stcfc",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC5phone5email9firstName04lastJ06amountACSS_S4Stcfc",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC4hash4intoys6HasherVz_tF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC4hash4intoys6HasherVz_tF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CustomerPaymentData",
-                "printedName": "SkipCashSDK.CustomerPaymentData",
-                "usr": "s:11SkipCashSDK19CustomerPaymentDataC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CustomerPaymentData",
-                "printedName": "SkipCashSDK.CustomerPaymentData",
-                "usr": "s:11SkipCashSDK19CustomerPaymentDataC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC2eeoiySbAC_ACtFZ",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC2eeoiySbAC_ACtFZ",
-            "moduleName": "SkipCashSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPhone",
-            "printedName": "getPhone()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC8getPhoneSSyF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC8getPhoneSSyF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setPhone",
-            "printedName": "setPhone(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC8setPhoneyySSF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC8setPhoneyySSF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getEmail",
-            "printedName": "getEmail()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC8getEmailSSyF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC8getEmailSSyF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setEmail",
-            "printedName": "setEmail(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC8setEmailyySSF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC8setEmailyySSF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getFirstName",
-            "printedName": "getFirstName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC12getFirstNameSSyF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC12getFirstNameSSyF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setFirstName",
-            "printedName": "setFirstName(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC12setFirstNameyySSF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC12setFirstNameyySSF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLastName",
-            "printedName": "getLastName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC11getLastNameSSyF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC11getLastNameSSyF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setLastName",
-            "printedName": "setLastName(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC11setLastNameyySSF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC11setLastNameyySSF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getAmount",
-            "printedName": "getAmount()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC9getAmountSSyF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC9getAmountSSyF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setAmount",
-            "printedName": "setAmount(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC9setAmountyySSF",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC9setAmountyySSF",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11SkipCashSDK19CustomerPaymentDataC9hashValueSivp",
-            "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC9hashValueSivp",
-            "moduleName": "SkipCashSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK19CustomerPaymentDataC9hashValueSivg",
-                "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC9hashValueSivg",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:11SkipCashSDK19CustomerPaymentDataC",
-        "mangledName": "$s11SkipCashSDK19CustomerPaymentDataC",
-        "moduleName": "SkipCashSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "SkipCashSDK"
       },
       {
         "kind": "TypeDecl",
@@ -1826,7 +1409,7 @@
           {
             "kind": "Function",
             "name": "applePayResponseData",
-            "printedName": "applePayResponseData(paymentId:isSuccess:token:returnCode:errorMessage:)",
+            "printedName": "applePayResponseData(paymentID:isSuccess:token:returnCode:errorMessage:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1862,11 +1445,37 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PassKit.PKPaymentAuthorizationResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PassKit.PKPaymentAuthorizationResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKPaymentAuthorizationResult",
+                        "printedName": "PassKit.PKPaymentAuthorizationResult",
+                        "usr": "c:objc(cs)PKPaymentAuthorizationResult"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@SkipCashSDK@objc(pl)ApplePayReponseDelegate(im)applePayResponseDataWithPaymentId:isSuccess:token:returnCode:errorMessage:",
-            "mangledName": "$s11SkipCashSDK23ApplePayReponseDelegateP05appleE12ResponseData9paymentId9isSuccess5token10returnCode12errorMessageySS_SbSSSiSStF",
+            "usr": "c:@M@SkipCashSDK@objc(pl)ApplePayReponseDelegate(im)applePayResponseDataWithPaymentID:isSuccess:token:returnCode:errorMessage:completion:",
+            "mangledName": "$s11SkipCashSDK23ApplePayReponseDelegateP05appleE12ResponseData9paymentID9isSuccess5token10returnCode12errorMessage10completionySS_SbSSSiSSySo28PKPaymentAuthorizationResultCcSgtF",
             "moduleName": "SkipCashSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : SkipCashSDK.ApplePayReponseDelegate>",
             "sugared_genericSig": "<Self where Self : SkipCashSDK.ApplePayReponseDelegate>",
@@ -1886,8 +1495,7 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ]
       },
       {
@@ -1895,269 +1503,6 @@
         "name": "SetupVC",
         "printedName": "SetupVC",
         "children": [
-          {
-            "kind": "Var",
-            "name": "appBackendServerEndPoint",
-            "printedName": "appBackendServerEndPoint",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvp",
-            "mangledName": "$s11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvp",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "Custom",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvg",
-                "mangledName": "$s11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvg",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvs",
-                "mangledName": "$s11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvs",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvM",
-                "mangledName": "$s11SkipCashSDK7SetupVCC24appBackendServerEndPointSSvM",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "paymentData",
-            "printedName": "paymentData",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CustomerPaymentData",
-                "printedName": "SkipCashSDK.CustomerPaymentData",
-                "usr": "s:11SkipCashSDK19CustomerPaymentDataC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0Cvp",
-            "mangledName": "$s11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0Cvp",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CustomerPaymentData",
-                    "printedName": "SkipCashSDK.CustomerPaymentData",
-                    "usr": "s:11SkipCashSDK19CustomerPaymentDataC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0Cvg",
-                "mangledName": "$s11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0Cvg",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CustomerPaymentData",
-                    "printedName": "SkipCashSDK.CustomerPaymentData",
-                    "usr": "s:11SkipCashSDK19CustomerPaymentDataC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0Cvs",
-                "mangledName": "$s11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0Cvs",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0CvM",
-                "mangledName": "$s11SkipCashSDK7SetupVCC11paymentDataAA015CustomerPaymentG0CvM",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "authorizationHeader",
-            "printedName": "authorizationHeader",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11SkipCashSDK7SetupVCC19authorizationHeaderSSvp",
-            "mangledName": "$s11SkipCashSDK7SetupVCC19authorizationHeaderSSvp",
-            "moduleName": "SkipCashSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC19authorizationHeaderSSvg",
-                "mangledName": "$s11SkipCashSDK7SetupVCC19authorizationHeaderSSvg",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC19authorizationHeaderSSvs",
-                "mangledName": "$s11SkipCashSDK7SetupVCC19authorizationHeaderSSvs",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11SkipCashSDK7SetupVCC19authorizationHeaderSSvM",
-                "mangledName": "$s11SkipCashSDK7SetupVCC19authorizationHeaderSSvM",
-                "moduleName": "SkipCashSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
           {
             "kind": "Var",
             "name": "paymentToken",
@@ -2239,6 +1584,93 @@
                 "declKind": "Accessor",
                 "usr": "s:11SkipCashSDK7SetupVCC12paymentTokenSSvM",
                 "mangledName": "$s11SkipCashSDK7SetupVCC12paymentTokenSSvM",
+                "moduleName": "SkipCashSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentID",
+            "printedName": "paymentID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SkipCashSDK7SetupVCC9paymentIDSSvp",
+            "mangledName": "$s11SkipCashSDK7SetupVCC9paymentIDSSvp",
+            "moduleName": "SkipCashSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SkipCashSDK7SetupVCC9paymentIDSSvg",
+                "mangledName": "$s11SkipCashSDK7SetupVCC9paymentIDSSvg",
+                "moduleName": "SkipCashSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SkipCashSDK7SetupVCC9paymentIDSSvs",
+                "mangledName": "$s11SkipCashSDK7SetupVCC9paymentIDSSvs",
+                "moduleName": "SkipCashSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SkipCashSDK7SetupVCC9paymentIDSSvM",
+                "mangledName": "$s11SkipCashSDK7SetupVCC9paymentIDSSvM",
                 "moduleName": "SkipCashSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2350,6 +1782,153 @@
                 "declKind": "Accessor",
                 "usr": "s:11SkipCashSDK7SetupVCC8delegateAA23ApplePayReponseDelegate_pSgvM",
                 "mangledName": "$s11SkipCashSDK7SetupVCC8delegateAA23ApplePayReponseDelegate_pSgvM",
+                "moduleName": "SkipCashSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "completion",
+            "printedName": "completion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PassKit.PKPaymentAuthorizationResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PassKit.PKPaymentAuthorizationResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKPaymentAuthorizationResult",
+                        "printedName": "PassKit.PKPaymentAuthorizationResult",
+                        "usr": "c:objc(cs)PKPaymentAuthorizationResult"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvp",
+            "mangledName": "$s11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvp",
+            "moduleName": "SkipCashSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PassKit.PKPaymentAuthorizationResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PassKit.PKPaymentAuthorizationResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PKPaymentAuthorizationResult",
+                            "printedName": "PassKit.PKPaymentAuthorizationResult",
+                            "usr": "c:objc(cs)PKPaymentAuthorizationResult"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvg",
+                "mangledName": "$s11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvg",
+                "moduleName": "SkipCashSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PassKit.PKPaymentAuthorizationResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PassKit.PKPaymentAuthorizationResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PKPaymentAuthorizationResult",
+                            "printedName": "PassKit.PKPaymentAuthorizationResult",
+                            "usr": "c:objc(cs)PKPaymentAuthorizationResult"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvs",
+                "mangledName": "$s11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvs",
+                "moduleName": "SkipCashSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvM",
+                "mangledName": "$s11SkipCashSDK7SetupVCC10completionySo28PKPaymentAuthorizationResultCcSgvM",
                 "moduleName": "SkipCashSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2559,79 +2138,37 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
+      "filePath": "\/Users\/ahmedalmna\/Desktop\/SkipCash\/APPLE_PAY\/PaymentPackages\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
       "kind": "StringLiteral",
-      "offset": 446,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
-      "kind": "StringLiteral",
-      "offset": 466,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
-      "kind": "StringLiteral",
-      "offset": 490,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
-      "kind": "StringLiteral",
-      "offset": 513,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
-      "kind": "StringLiteral",
-      "offset": 534,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
-      "kind": "StringLiteral",
-      "offset": 2213,
+      "offset": 273,
       "length": 12,
       "value": "\"SkipCashSDK.ResponseData\""
     },
     {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
+      "filePath": "\/Users\/ahmedalmna\/Desktop\/SkipCash\/APPLE_PAY\/PaymentPackages\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
       "kind": "StringLiteral",
-      "offset": 3731,
+      "offset": 1811,
       "length": 26,
       "value": "\"https:\/\/api.skipcash.app\""
     },
     {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
+      "filePath": "\/Users\/ahmedalmna\/Desktop\/SkipCash\/APPLE_PAY\/PaymentPackages\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
       "kind": "StringLiteral",
-      "offset": 3779,
+      "offset": 1859,
       "length": 40,
       "value": "\"https:\/\/skipcashtest.azurewebsites.net\""
     },
     {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
+      "filePath": "\/Users\/ahmedalmna\/Desktop\/SkipCash\/APPLE_PAY\/PaymentPackages\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
       "kind": "StringLiteral",
-      "offset": 3905,
+      "offset": 1943,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
+      "filePath": "\/Users\/ahmedalmna\/Desktop\/SkipCash\/APPLE_PAY\/PaymentPackages\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
       "kind": "StringLiteral",
-      "offset": 4084,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedalmna\/Desktop\/NEW\/SkipCashSDK\/SkipCashSDK\/Controller\/SetupVC.swift",
-      "kind": "StringLiteral",
-      "offset": 4130,
+      "offset": 1981,
       "length": 2,
       "value": "\"\""
     }

@@ -3,31 +3,13 @@
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SkipCashSDK
 import CommonCrypto
 import CryptoKit
+import PassKit
 @_exported import SkipCashSDK
 import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public class CustomerPaymentData : Swift.Hashable {
-  public init(phone: Swift.String = "", email: Swift.String = "", firstName: Swift.String = "", lastName: Swift.String = "", amount: Swift.String = "")
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (lhs: SkipCashSDK.CustomerPaymentData, rhs: SkipCashSDK.CustomerPaymentData) -> Swift.Bool
-  public func getPhone() -> Swift.String
-  public func setPhone(_ newPhone: Swift.String)
-  public func getEmail() -> Swift.String
-  public func setEmail(_ newEmail: Swift.String)
-  public func getFirstName() -> Swift.String
-  public func setFirstName(_ newFirstName: Swift.String)
-  public func getLastName() -> Swift.String
-  public func setLastName(_ newLastName: Swift.String)
-  public func getAmount() -> Swift.String
-  public func setAmount(_ newAmount: Swift.String)
-  @objc deinit
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public struct ResultObject : Swift.Codable {
   public var isSuccess: Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -52,14 +34,13 @@ public struct ResultObject : Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol ApplePayReponseDelegate {
-  @objc func applePayResponseData(paymentId: Swift.String, isSuccess: Swift.Bool, token: Swift.String, returnCode: Swift.Int, errorMessage: Swift.String)
+  @objc func applePayResponseData(paymentID: Swift.String, isSuccess: Swift.Bool, token: Swift.String, returnCode: Swift.Int, errorMessage: Swift.String, completion: ((PassKit.PKPaymentAuthorizationResult) -> Swift.Void)?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SetupVC : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var appBackendServerEndPoint: Swift.String
-  @_Concurrency.MainActor(unsafe) public var paymentData: SkipCashSDK.CustomerPaymentData
-  @_Concurrency.MainActor(unsafe) public var authorizationHeader: Swift.String
   @_Concurrency.MainActor(unsafe) public var paymentToken: Swift.String
+  @_Concurrency.MainActor(unsafe) public var paymentID: Swift.String
   @_Concurrency.MainActor(unsafe) public var delegate: (any SkipCashSDK.ApplePayReponseDelegate)?
+  @_Concurrency.MainActor(unsafe) public var completion: ((PassKit.PKPaymentAuthorizationResult) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)

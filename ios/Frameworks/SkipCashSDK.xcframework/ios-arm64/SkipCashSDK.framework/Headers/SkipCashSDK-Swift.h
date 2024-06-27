@@ -300,10 +300,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSString;
+@class PKPaymentAuthorizationResult;
 
 SWIFT_PROTOCOL("_TtP11SkipCashSDK23ApplePayReponseDelegate_")
 @protocol ApplePayReponseDelegate
-- (void)applePayResponseDataWithPaymentId:(NSString * _Nonnull)paymentId isSuccess:(BOOL)isSuccess token:(NSString * _Nonnull)token returnCode:(NSInteger)returnCode errorMessage:(NSString * _Nonnull)errorMessage;
+- (void)applePayResponseDataWithPaymentID:(NSString * _Nonnull)paymentID isSuccess:(BOOL)isSuccess token:(NSString * _Nonnull)token returnCode:(NSInteger)returnCode errorMessage:(NSString * _Nonnull)errorMessage completion:(void (^ _Nullable)(PKPaymentAuthorizationResult * _Nonnull))completion;
 @end
 
 

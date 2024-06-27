@@ -25,3 +25,7 @@
 
 ## 0.0.9
 * Correct Linking Of SkipCashSDK
+
+## 0.1.0
+* Improved the speed of processing apple pay transaction
+* Added native web-view feature with callback event upon finishing payment process

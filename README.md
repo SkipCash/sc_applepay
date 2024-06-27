@@ -8,7 +8,7 @@ SkipCash ApplePay Flutter Plugin; The plugin facilitates SkipCash Apple Pay inte
 
 ```yaml
 dependencies:
-  sc_applepay: ^0.0.9
+  sc_applepay: ^0.1.0
 ```
 
 ```dart
@@ -40,6 +40,7 @@ _newPayment.setAuthorizationHeader(); /*
 */
 
 StreamSubscription<dynamic>? _applePayResponseSubscription;
+StreamSubscription<dynamic>? paymentFinishedWebViewClosedSubscription;
 
 void _setupApplePayResponseListener() {
   _applePayResponseSubscription = _newPayment.applePayResponseStream.listen((response) {
@@ -52,6 +53,14 @@ void _setupApplePayResponseListener() {
   });
 }
 
+void paymentFinishedWebViewClosedListener() {
+  paymentFinishedWebViewClosedSubscription = _newPayment.webViewClosedTrigger.listen((response) {
+    // GET PAYMENT DETAILS (i.e success/failed ) UPON NATIVE WEBVIEW CLOSE EVENT
+    debugPrint(response);
+  });
+}
+
+
 @override
 void initState() {
   super.initState();
@@ -61,6 +70,7 @@ void initState() {
 @override
 void dispose() {
   _applePayResponseSubscription?.cancel();
+  paymentFinishedWebViewClosedSubscription?.cancel();
   super.dispose();
 }
 

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ffi';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
@@ -9,7 +10,9 @@ class ScApplepay {
   static const MethodChannel _channel = MethodChannel('sc_applepay');
 
   static final responseStreamController = StreamController<Map<String, dynamic>>.broadcast();
-  Map<String, dynamic> paymentData     = <String, dynamic>{
+  static final webViewClosedController  = StreamController<String>.broadcast();
+
+  Map<String, dynamic> paymentData      = <String, dynamic>{
     "summaryItems": <String, String>{},
   };
 
@@ -25,6 +28,7 @@ class ScApplepay {
   String _email                     = "";
 
   Stream<dynamic> get applePayResponseStream => responseStreamController.stream;
+  Stream<dynamic> get webViewClosedTrigger => webViewClosedController.stream;
 
 
   ScApplepay({required this.merchantIdentifier, required this.createPaymentLinkEndPoint}){
@@ -44,6 +48,10 @@ class ScApplepay {
         }catch(e){
           debugPrint('Error decoding JSON: $e');
         }
+
+      case 'payment_finished_webview_closed':
+        String responseData = "Native Web View Closed";
+        webViewClosedController.add(responseData);
 
         default: throw PlatformException(
           code: 'Unimplemented',
@@ -79,6 +87,15 @@ class ScApplepay {
 
   void setupNewCard(){
     _channel.invokeMethod<void>('setupNewCard');
+  }
+
+  void loadSCPGW(String payURL, String nativeWebViewTitle, String returnURL){
+    _channel.invokeMethod<void>(
+        'loadSCPGW', {
+      "payURL": payURL,
+      "nativeWebViewTitle": nativeWebViewTitle,
+      "returnURL": returnURL
+    });
   }
 
   void startPayment(){

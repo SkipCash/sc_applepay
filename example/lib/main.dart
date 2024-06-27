@@ -20,16 +20,21 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
+  // incase of only using native webview,
+  // you can leave this empty 'merchantIdentifier'
+  // and 'createPaymentLinkEndPoint' parameters empty
   final _newPayment = ScApplepay(
     merchantIdentifier: "", //here you should pass your merchantIdentifier
     createPaymentLinkEndPoint: ""
   );
 
+  /* Optional - use when using native apple pay*/
   /* Authorizartion Header */
   // _newPayment.setAuthorizationHeader();
   // set your endpoint authorizartion header, used to protect your endpoint from unauthorized access 
 
   StreamSubscription<dynamic>? _applePayResponseSubscription;
+  StreamSubscription<dynamic>? paymentFinishedWebViewClosedSubscription;
 
   final TextEditingController _firstNameController = TextEditingController();
   final TextEditingController _lastNameController = TextEditingController();
@@ -41,12 +46,21 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     _setupApplePayResponseListener();
+    paymentFinishedWebViewClosedListener();
   }
 
   @override
   void dispose() {
     _applePayResponseSubscription?.cancel();
+    paymentFinishedWebViewClosedSubscription?.cancel();
     super.dispose();
+  }
+
+  void paymentFinishedWebViewClosedListener() {
+    paymentFinishedWebViewClosedSubscription = _newPayment.webViewClosedTrigger.listen((response) {
+      // GET PAYMENT DETAILS (i.e success/failed ) UPON NATIVE WEBVIEW CLOSE EVENT
+      debugPrint(response);
+    });
   }
 
   void _setupApplePayResponseListener() {
@@ -148,14 +162,14 @@ class _MyAppState extends State<MyApp> {
                       String email = _emailController.text;
                       String amount = _amountController.text;
 
-                      if(firstName.length < 1 || lastName.length < 1 || phone.length < 1
-                        || email.length < 1 || amount.length < 1 || amount == "0.0"){
+                      if(firstName.isEmpty || lastName.isEmpty || phone.isEmpty
+                        || email.isEmpty || amount.isEmpty || amount == "0.0"){
                         showDialog(
                           context: context,
                           builder: (BuildContext context) {
                             return AlertDialog(
                               title: const Text('Invalid Details'),
-                              content: Text(
+                              content: const Text(
                                   "Please fill all of the fields, Also amount must be above 0.0, i.e 1.0  at least."
                               ),
                               actions: [
@@ -173,7 +187,7 @@ class _MyAppState extends State<MyApp> {
                         return;
                       }
 
-                      
+
                       _newPayment.setFirstName(firstName);
                       _newPayment.setLastName(lastName);
                       _newPayment.setEmail(email);
@@ -219,6 +233,33 @@ class _MyAppState extends State<MyApp> {
                   children: [
                     Text(
                       "Setup new card in wallet",
+                      style: TextStyle(color: Color.fromRGBO(1, 125, 251, 1.0)),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              width: 250,
+              child: ElevatedButton(
+                onPressed: (){
+                  _newPayment.loadSCPGW(
+                      "", // generate new payURL and pass it here
+                      "", // Title for webview modal
+                      "" // return url defined in merchant portal
+                  );
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/skipcash.png',
+                      width: 24,
+                      height: 24,
+                    ),
+                    const SizedBox(width: 8),
+                    const Text(
+                      "Test NativeWebView",
                       style: TextStyle(color: Color.fromRGBO(1, 125, 251, 1.0)),
                     )
                   ],

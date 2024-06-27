@@ -35,6 +35,10 @@ abstract class ScApplepayPlatform extends PlatformInterface {
     throw UnimplementedError('setupNewCard() has not been implemented.');
   }
 
+  void loadSCPGW(String payURL, String nativeWebViewTitle, String returnURL) {
+    throw UnimplementedError('loadSCPGW() has not been implemented.');
+  }
+
   void startPayment(String paymentData){
     throw UnimplementedError('startPayment() has not been implemented.');
   }
