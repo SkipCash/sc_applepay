@@ -58,12 +58,27 @@ public class ScApplepayPlugin: NSObject, FlutterPlugin, ApplePayReponseDelegate 
     
     public func applePayResponseData(paymentID: String, isSuccess: Bool, token: String, returnCode: Int, errorMessage: String, completion: ((PKPaymentAuthorizationResult) -> Void)?) {
 
+        guard let windowScene = UIApplication.shared.connectedScenes
+            .compactMap({ $0 as? UIWindowScene })
+            .first(where: { $0.activationState == .foregroundActive }),
+            let window = windowScene.windows.first(where: { $0.isKeyWindow }) else {
+
+            return
+        }
+
+        var viewController = window.rootViewController
+        while let presentedViewController = viewController?.presentedViewController {
+            viewController = presentedViewController
+        }
+
+        viewController?.dismiss(animated: true, completion: nil)
+
         if (isSuccess) {
 //            self.showAlert(with: "Success", message: "Transaction was successful! To process a refund, please provide a screenshot of this alert with the payment ID '\(paymentID)' to support@skipcash.com.")
 //
             let errors = [Error]()
             let status = PKPaymentAuthorizationStatus.success
-            
+
             self.paymentStatus = status
             completion?(PKPaymentAuthorizationResult(status: status, errors: errors))
         }else{
